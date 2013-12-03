@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{{ site.baseurl}}/css/main.css">
+    <link rel="stylesheet" href="{{ site.baseurl}}/css/animate.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl}}/css/colorbox.css">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Oswald:400,700' rel='stylesheet' type='text/css'>
+    <script src="{{ site.baseurl}}/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body data-spy="scroll" data-target="#main-menu">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="container">
+    <header class="header">
+
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="logo fleft"> <a href="#" title="Sepeco" rel="home"> <img src="{{ site.baseurl}}/img/logo-sepeco_small.png" alt="Aura"> </a> </div>
+                  </div>
+                  <div class="col-md-8">
+                      <nav>
+                          <ul class="main-menu list-inline">
+                              <li class="active"><a href="#">HOME</a></li>
+                              <li><a href="#">¿QUIÈNES SOMOS?</a></li>
+                              <li><a href="#">EXPERIENCIA</a></li>
+                              <li><a href="#">OBRAS REALIZADAS</a></li>
+                              <li><a href="#">CONTACTO</a></li>
+
+                          </ul>
+                      </nav>
+                  </div>
+              </div>
+
+
+
+
+
+
+
+
+
+    </header>
+
+    {{content}}
+
+
+    <div class="row">
+        <footer class="footer">
+            <a href="#home" class="logo">
+                <img src="{{ site.baseurl}}/img/logo-sepeco_fff_small.png" alt="Logo">
+            </a>
+
+            <p>© {{date}} SEPECO - Todos los derechos reservados</p>
+
+        </footer>
+    </div>
+
+
+</div>
+
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<!--<script src="{{ site.baseurl}}/js/vendor/jquery-1.10.2.min.js"></script>-->
+<script src="{{ site.baseurl}}/js/plugins.js"></script>
+<script src="{{ site.baseurl}}/js/main.js"></script>
+
+<script>
+$(window).load(function(){
+    $('.flexslider').flexslider({
+        animation: "fade",
+//        controlNav: false,
+        directionNav: false,
+        start: function(slider){
+            $('.flexslider').removeClass('loading');
+        }
+    });
+});
+
+
+//        $('.main-menu li a').hover(function(){
+////            $(this).addClass('animated pulse');
+//            var x = 'pulse';
+//            $(this).parent().removeClass(x + ' animated');
+//            $(this).parent().removeClass().addClass(x + ' animated').one('webkitAnimationEnd oAnimationEnd', function(){
+//                $(this).parent().removeClass(x + ' animated');
+//            });
+//
+//        });
+</script>
+
+</body>
+</html>
